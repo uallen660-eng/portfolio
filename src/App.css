@@ -118,3 +118,342 @@
         transform: none;
     }
 }
+
+
+/* =========================================
+   CYBER EMBER — ORANGE ELECTRONICS THEME
+   Keeps existing layout and responsive rules
+========================================= */
+
+:root {
+    color: #fff4eb;
+    background: #100c0a;
+
+    --bg: #100c0a;
+    --panel: #1a120e;
+    --panel2: #140e0b;
+
+    --line: rgba(251, 146, 60, 0.18);
+    --muted: #b6a093;
+
+    --blue: #fb923c;
+    --cyan: #fdba74;
+    --purple: #f97316;
+}
+
+/* Main background */
+body {
+    background: #100c0a;
+    color: #fff4eb;
+}
+
+.site-shell {
+    background:
+            radial-gradient(
+                    ellipse at 80% 8%,
+                    rgba(194, 65, 12, 0.10),
+                    transparent 35%
+            ),
+            #100c0a;
+}
+
+/* Ambient glow */
+.ambient-one {
+    background: #f97316;
+    opacity: 0.13;
+}
+
+.ambient-two {
+    background: #c2410c;
+    opacity: 0.13;
+}
+
+/* Navigation */
+.brand-mark {
+    border-color: rgba(251, 146, 60, 0.65);
+    box-shadow: 0 0 18px rgba(249, 115, 22, 0.08);
+}
+
+.brand-mark span,
+.brand-dot {
+    color: #fb923c;
+}
+
+.nav-cta {
+    border-color: rgba(251, 146, 60, 0.5);
+}
+
+.nav-links > a:not(.nav-cta):hover {
+    color: #fdba74;
+}
+
+.nav-links.nav-open {
+    background: #1a120e;
+}
+
+/* Hero heading gradient */
+.gradient-text {
+    background: linear-gradient(
+            100deg,
+            #fb923c 0%,
+            #fdba74 52%,
+            #f97316 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Accent text and indicators */
+.eyebrow {
+    color: #fdba74;
+}
+
+.status-dot,
+.footer-pulse {
+    background: #fb923c;
+    box-shadow: 0 0 12px rgba(251, 146, 60, 0.75);
+}
+
+.meta-icon,
+.card-top-icon,
+.text-link,
+.section-kicker,
+.experience-type {
+    color: #fb923c;
+}
+
+.text-link:hover {
+    color: #fed7aa;
+}
+
+/* Buttons */
+.button-primary {
+    background: linear-gradient(135deg, #fb923c, #ea580c);
+    color: #1c0d05;
+    border: 1px solid rgba(253, 186, 116, 0.45);
+    box-shadow: 0 0 24px rgba(249, 115, 22, 0.12);
+}
+
+.button-primary:hover {
+    background: linear-gradient(135deg, #fdba74, #fb923c);
+}
+
+.button-ghost {
+    border-color: rgba(251, 146, 60, 0.3);
+}
+
+/* Profile code card */
+.profile-card {
+    border-color: rgba(251, 146, 60, 0.27);
+    background: linear-gradient(
+            145deg,
+            rgba(38, 23, 15, 0.98),
+            rgba(16, 12, 10, 0.98)
+    );
+    box-shadow:
+            0 25px 80px rgba(0, 0, 0, 0.35),
+            0 0 35px rgba(249, 115, 22, 0.04);
+}
+
+.code-purple {
+    color: #fdba74;
+}
+
+.code-blue {
+    color: #fb923c;
+}
+
+.code-cyan {
+    color: #f97316;
+}
+
+.code-green {
+    color: #fcd34d;
+}
+
+.code-cursor {
+    background: #fb923c;
+}
+
+.orbit {
+    border-color: rgba(251, 146, 60, 0.16);
+}
+
+.orbit-two {
+    border-color: rgba(249, 115, 22, 0.10);
+}
+
+.floating-chip {
+    background: #21150e;
+    border-color: rgba(251, 146, 60, 0.28);
+}
+
+.floating-chip span {
+    color: #fdba74;
+}
+
+.scroll-cue span:after {
+    background: #fb923c;
+}
+
+/* Intro strip */
+.intro-strip {
+    background: rgba(26, 18, 14, 0.72);
+}
+
+.strip-inner b {
+    color: #fb923c;
+}
+
+/* About section */
+.detail-row {
+    border-bottom-color: rgba(251, 146, 60, 0.15);
+}
+
+.detail-label {
+    color: #c08c6d;
+}
+
+/* Skill cards */
+.skill-card {
+    background: linear-gradient(
+            135deg,
+            #21150f,
+            #140e0b
+    );
+}
+
+.skill-card:hover,
+.project-card:hover {
+    border-color: rgba(251, 146, 60, 0.55);
+}
+
+.skill-icon,
+.contact-icon {
+    border-color: rgba(251, 146, 60, 0.3);
+    background: #2a190f;
+    color: #fdba74;
+}
+
+.small-note span {
+    color: #fb923c;
+}
+
+/* Projects section */
+.projects-section {
+    background: linear-gradient(
+            180deg,
+            rgba(38, 23, 15, 0.6),
+            rgba(16, 12, 10, 0.25)
+    );
+}
+
+.project-card {
+    background: #17100c;
+}
+
+.project-visual {
+    background: radial-gradient(
+            ellipse at center,
+            #422315 0%,
+            #21140d 55%,
+            #140e0b 100%
+    );
+}
+
+/* Browser project illustration */
+.art-browser {
+    border-color: #c46b32;
+    background: #21150e;
+}
+
+.art-browser-top {
+    border-bottom-color: #51301d;
+}
+
+.art-browser-lines b {
+    background: #c46b32;
+}
+
+.art-browser-lines b:nth-child(2) {
+    background: #fb923c;
+}
+
+.art-browser-lines em {
+    background: #f97316;
+}
+
+/* Electronics circuit illustration */
+.art-circuit {
+    border-color: #fb923c;
+    color: #fdba74;
+    background: #24150c;
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.13);
+}
+
+.art-circuit:before,
+.art-circuit:after {
+    background: #fb923c;
+    box-shadow:
+            125px 0 #fb923c,
+            0 22px #fb923c,
+            125px 22px #fb923c;
+}
+
+/* Chip illustration */
+.art-chip {
+    border-color: #fb923c;
+    background: #2a190f;
+    box-shadow: 0 0 32px rgba(249, 115, 22, 0.2);
+}
+
+.art-chip span {
+    color: #fdba74;
+}
+
+.art-chip i {
+    background: #fb923c;
+    box-shadow:
+            0 13px #fb923c,
+            0 26px #fb923c,
+            0 39px #fb923c;
+}
+
+/* Project labels */
+.project-category {
+    color: #fdba74;
+}
+
+.tag-list span {
+    border-color: rgba(251, 146, 60, 0.2);
+}
+
+/* Contact card */
+.contact-card {
+    background: linear-gradient(
+            135deg,
+            #21150f,
+            #140e0b
+    );
+}
+
+.contact-card-label {
+    color: #c08c6d;
+}
+
+.contact-link > span:last-child {
+    color: #fb923c;
+}
+
+/* Footer */
+.back-top {
+    color: #fdba74;
+}
+
+::selection {
+    background: #f97316;
+    color: #ffffff;
+}
+
+/* Reduced motion and responsive settings remain unchanged */
