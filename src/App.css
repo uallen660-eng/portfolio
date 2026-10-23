@@ -13,3 +13,108 @@
 @media(max-width:850px){.hero{gap:20px;grid-template-columns:1fr 1fr}.hero h1{font-size:48px}.hero-visual{transform:scale(.94)}.about-grid,.contact-layout{gap:40px}.projects-grid{grid-template-columns:repeat(2,1fr)}.project-card:last-child{grid-column:span 2}.project-card:last-child .project-visual{height:160px}.strip-inner{gap:20px}.strip-inner p{gap:9px}}
 @media(max-width:650px){.section-wrap,.topbar{width:min(100% - 34px,500px)}.topbar{height:70px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:69px;left:0;right:0;background:#101725;border:1px solid var(--line);border-radius:10px;padding:18px;align-items:stretch;gap:0;box-shadow:0 20px 40px #0007}.nav-links.nav-open{display:flex;flex-direction:column}.nav-links>a{padding:13px 7px}.nav-cta{text-align:center;margin-top:7px}.hero{grid-template-columns:1fr;padding-top:65px;padding-bottom:76px;gap:20px}.hero h1{font-size:clamp(42px,12vw,58px);letter-spacing:-2.5px}.hero-intro{font-size:13px}.hero-visual{min-height:370px;margin:0 -8px;transform:none}.profile-card{width:min(90%,390px)}.orbit{width:310px;height:310px}.orbit-two{width:360px;height:360px}.chip-top{right:0;top:36px}.chip-bottom{left:0;bottom:36px}.scroll-cue{bottom:20px}.visual-index{right:7px;bottom:-7px}.strip-inner{align-items:flex-start;flex-direction:column;gap:0;padding-top:19px;padding-bottom:14px}.strip-inner p{line-height:1.9;margin:10px 0 0}.content-section{padding-top:75px}.section-heading h2{font-size:34px}.about-grid,.contact-layout{grid-template-columns:1fr;gap:25px}.large-copy{font-size:17px}.detail-row{padding:14px 0}.skills-grid{grid-template-columns:repeat(2,1fr);gap:10px}.skill-card{padding:17px}.skill-card h3{font-size:12px}.projects-section{margin-top:45px;padding:65px 0}.projects-grid{grid-template-columns:1fr}.project-card:last-child{grid-column:auto}.project-card:last-child .project-visual{height:185px}.project-info>p{min-height:0}.contact-section{padding-top:75px;padding-bottom:70px}.contact-layout h2{font-size:45px}.contact-card{padding:18px}.footer{grid-template-columns:1fr auto}.footer>p{grid-row:2;grid-column:1/-1;text-align:left;margin:0}.back-top{grid-column:2;grid-row:1}.footer-bottom{font-size:8px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* EXPERIENCE SECTION DESIGN */
+
+.extra-section {
+    scroll-margin-top: 90px;
+    animation: experienceFadeIn 0.8s ease both;
+}
+
+.section-label {
+    color: #64ffda;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    max-width: 650px;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.experience-list {
+    max-width: 850px;
+    margin-top: 30px;
+    margin-left: 5px;
+    padding-left: 25px;
+    border-left: 2px solid rgba(100, 255, 218, 0.3);
+}
+
+.experience-item {
+    position: relative;
+    padding: 0 0 30px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(6px);
+}
+
+.experience-dot {
+    position: absolute;
+    left: -32px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #64ffda;
+    box-shadow: 0 0 12px rgba(100, 255, 218, 0.45);
+}
+
+.experience-type {
+    color: #64ffda;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.experience-item h3 {
+    margin: 0 0 10px;
+}
+
+.experience-item p {
+    line-height: 1.8;
+}
+
+@keyframes experienceFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-list {
+        padding-left: 20px;
+    }
+
+    .experience-dot {
+        left: -27px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .extra-section {
+        animation: none;
+    }
+
+    .experience-item {
+        transition: none;
+    }
+
+    .experience-item:hover {
+        transform: none;
+    }
+}
